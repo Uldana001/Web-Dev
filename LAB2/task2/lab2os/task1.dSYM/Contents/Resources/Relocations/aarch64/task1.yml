@@ -1,0 +1,8 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/uldanakonyratbaeva/Downloads/LAB2/task2/lab2os/task1'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _fun, symObjAddr: 0x0, symBinAddr: 0x100003E54, symSize: 0x54 }
+  - { offsetInCU: 0x65, offset: 0x65, size: 0x8, addend: 0x0, symName: _fun, symObjAddr: 0x0, symBinAddr: 0x100003E54, symSize: 0x54 }
+  - { offsetInCU: 0x7A, offset: 0x7A, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x54, symBinAddr: 0x100003EA8, symSize: 0x74 }
+...

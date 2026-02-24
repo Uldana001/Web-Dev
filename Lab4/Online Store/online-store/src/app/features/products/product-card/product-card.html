@@ -1,0 +1,43 @@
+<article class="card">
+  <a class="imageWrap" [href]="product.link" target="_blank" rel="noopener">
+    <img class="mainImg" [src]="selectedImage" [alt]="product.name" />
+  </a>
+
+  <div class="thumbs" *ngIf="product.images.length >= 3">
+    <button
+      class="thumbBtn"
+      *ngFor="let img of product.images"
+      type="button"
+      (click)="setImage(img)">
+      <img [src]="img" [alt]="product.name + ' photo'" />
+    </button>
+  </div>
+
+  <div class="content">
+    <a class="title" [href]="product.link" target="_blank" rel="noopener">
+      {{ product.name }}
+    </a>
+
+    <p class="desc">{{ product.description }}</p>
+
+    <div class="meta">
+      <div class="price">{{ formatPriceKzt(product.price) }}</div>
+
+      <div class="rating" [attr.aria-label]="'Rating ' + product.rating">
+        <span class="star full" *ngFor="let _ of [].constructor(fullStars)">★</span>
+        <span class="star half" *ngIf="hasHalfStar">★</span>
+        <span class="star empty" *ngFor="let _ of [].constructor(emptyStars)">★</span>
+        <span class="badge">{{ product.rating.toFixed(1) }}</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="btn" [href]="whatsappShareUrl()" target="_blank" rel="noopener">
+        Share WhatsApp
+      </a>
+      <a class="btn ghost" [href]="telegramShareUrl()" target="_blank" rel="noopener">
+        Share Telegram
+      </a>
+    </div>
+  </div>
+</article>

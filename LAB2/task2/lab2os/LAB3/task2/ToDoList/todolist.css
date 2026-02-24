@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace
+}
+
+body{
+    /* background-color:whitesmoke; */
+    background: linear-gradient(to left, rgb(82, 92, 232), rgb(142, 21, 43));
+}
+
+.mainBody{
+    color:black;
+    text-align: center;
+    padding: 20px 140px;
+    margin: 80px;
+    font-size: 25px;
+    border-radius: 190px;
+    box-shadow: 12px 12px 12px 1px rgb(116, 142, 202);
+    border: 6px solid rgb(116, 142, 202) ;
+}
+
+p{
+    margin: 5px;
+}
+
+#myInput{
+    border-radius: 15px;
+    height: 25px;
+    width: 400px;
+    padding: 10px;
+}
+
+#push{
+    height: 25px;
+    width: 39px;
+    background-color: aliceblue;
+    border-radius: 17px;
+    font-weight: bold;
+    color: rgb(10, 1, 33);
+}
+
+ul{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    width: 800px;
+   
+
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+li{
+    width: inherit;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 12px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 3%;
+    border: 3px solid rgb(22, 11, 95);
+}
+
+
+
+button{
+    height: 25px;
+    width: 39px;
+    background-color: aliceblue;
+    border-radius: 17px;
+    font-weight: bold;
+    color: rgb(10, 1, 33);
+}

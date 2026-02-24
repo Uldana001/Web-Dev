@@ -1,0 +1,13 @@
+<div class="page">
+  <header class="header">
+    <h1>Online Store (Kaspi.kz)</h1>
+    <p>Catalog of real products with share buttons.</p>
+  </header>
+
+  <section class="grid">
+    <app-product-card
+      *ngFor="let p of products"
+      [product]="p">
+    </app-product-card>
+  </section>
+</div>
